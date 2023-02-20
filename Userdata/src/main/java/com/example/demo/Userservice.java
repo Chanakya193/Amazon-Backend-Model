@@ -13,8 +13,8 @@ public class Userservice {
 		return repo.save(userdata);
 	}
 	
-	public Userdata get_user_details(String uniqueid) {
-		return repo.findById(uniqueid);
+	public Userdata get_user_details(Integer uniqueid) {
+		return repo.findByuniqueid(uniqueid);
 	}
 
 }

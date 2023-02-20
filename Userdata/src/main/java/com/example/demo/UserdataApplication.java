@@ -30,7 +30,7 @@ public class UserdataApplication {
 	}
 	
 	@GetMapping("/getusers/{uniqueid}")
-		public Userdata get_user_details(@PathVariable String uniqueid) {
+		public Userdata get_user_details(@PathVariable Integer uniqueid) {
 			Userdata User=service.get_user_details(uniqueid);
 			return User;
 		}
